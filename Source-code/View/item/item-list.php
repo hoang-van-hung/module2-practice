@@ -4,6 +4,9 @@
         <th>Tên hàng hóa</th>
         <th>Loại hàng hóa</th>
         <th>Giá cả</th>
+        <th>So luong</th>
+        <th>Ngay tao</th>
+        <th>Mo ta</th>
     </tr>
     <?php foreach ($item_list as $key => $item): ?>
         <tr>
@@ -13,6 +16,9 @@
             </td>
             <td><?php echo $item['loai_hang'] ?></td>
             <td><?php echo $item['gia_ca'] ?></td>
+            <td><?php echo $item['so_luong'] ?></td>
+            <td><?php echo $item['ngay_tao'] ?></td>
+            <td><?php echo $item['mo_ta'] ?></td>
             <td>
                 <button type="submit" class="btn btn-warning"><a
                         onclick="return confirm('Do you want to delete this item <?php echo $item['ten_hang'] ?>')"

@@ -5,6 +5,13 @@
                 <h4 class="mb-3">Sua thong tin san pham</h4>
                 <form class="needs-validation"  method="POST" enctype="multipart/form-data">
                     <div class="row g-3">
+                        <!-- Truong id khong the sua-->
+                        <div class="col-sm-6">
+                            <label for="id" class="form-label">Ma san pham </label>
+                            <input type="text" class="form-control"  name="id" aria-label="Disabled input example" disabled value="<?php echo $item[0]['id'] ?>" >
+                        </div>
+
+
                         <div class="col-sm-6">
                             <label for="ten_hang" class="form-label">Ten san pham </label>
                             <input type="text" class="form-control"  name="ten_hang" aria-label="Disabled input example" disabled value="<?php echo $item[0]['ten_hang'] ?>" >
